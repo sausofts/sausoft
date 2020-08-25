@@ -9,7 +9,7 @@ export class FooterComponent implements OnInit {
   constructor() { }
   submitted = false;
 
-  onSubmit() { this.submitted = true;console.log('dddddddddddddddd '+this.email); }
+  onSubmit() { }
   
 
   ngOnInit() {

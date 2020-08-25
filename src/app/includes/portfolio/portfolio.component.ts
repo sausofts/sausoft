@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-portfolio',
@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./portfolio.component.css']
 })
 export class PortfolioComponent implements OnInit {
+  
+  private showSection: any = true;
+
+  @Input() showTitle: Boolean;
 
   constructor() { }
 
   ngOnInit() {
+    if(this.showTitle == false) {
+      this.showSection = this.showTitle;
+    }
   }
 
 }

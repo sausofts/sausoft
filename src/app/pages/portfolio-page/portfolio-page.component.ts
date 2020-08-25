@@ -1,12 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-about-us',
-  templateUrl: './about-us.component.html',
-  styleUrls: ['./about-us.component.css']
+  selector: 'app-portfolio-page',
+  templateUrl: './portfolio-page.component.html',
+  styleUrls: ['./portfolio-page.component.css']
 })
-export class AboutUsComponent implements OnInit {
+export class PortfolioPageComponent implements OnInit {
 
+  private showTitle = false;
   private breadcrumbs = {
     prevPages: [
       {
@@ -15,7 +16,7 @@ export class AboutUsComponent implements OnInit {
       }
     ],
     currentPage: {
-      title: 'About'
+      title: 'Portfolio'
     }
   };
 
