@@ -40,8 +40,9 @@
                 <div class="col-lg-4 col-md-6 footer-newsletter">
                     <h4>Join Our Newsletter</h4>
                     <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                    <form (ngSubmit)="onSubmit()" #Newsletterform="ngForm">
-                        <input type="email" name="email" id="email" required><input type="submit" value="Subscribe">
+                    <form [formGroup]="newsLetterForm" (ngSubmit)="onNlSubmit()">
+                        <input type="email" name="email" id="email" formControlName="email" required>
+                        <input type="submit" value="Subscribe" [disabled]="!newsLetterForm.valid">
                     </form>
                 </div>
 
