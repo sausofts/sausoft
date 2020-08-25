@@ -8,6 +8,7 @@ import { FormBuilder } from '@angular/forms';
   styleUrls: ['./footer.component.css']
 })
 export class FooterComponent implements OnInit {
+
   newsLetterForm = this.nl.group({
     email: ['', Validators.required]
   });

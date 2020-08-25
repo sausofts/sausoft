@@ -17,6 +17,8 @@ import { OurClientsComponent } from './includes/our-clients/our-clients.componen
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { ServicesPageComponent } from './pages/services-page/services-page.component';
+import { PortfolioPageComponent } from './pages/portfolio-page/portfolio-page.component';
+import { BreadcrumbsComponent } from './includes/breadcrumbs/breadcrumbs.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { ServicesPageComponent } from './pages/services-page/services-page.compo
     OurClientsComponent,
     AboutUsComponent,
     ContactUsComponent,
-    ServicesPageComponent
+    ServicesPageComponent,
+    PortfolioPageComponent,
+    BreadcrumbsComponent
   ],
   imports: [
     BrowserModule,
